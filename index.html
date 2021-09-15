@@ -1,0 +1,233 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: bisque;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        .container{
+            display: flex;
+            padding: 2px;
+            margin: 1px;
+        }
+        
+        table{
+            border-collapse: collapse;
+            font-size: 0.8em;
+        }
+        
+        td,th {
+            border: 2px solid black;
+            padding: 5px;
+        }
+        
+        .container-fluid{
+            display: flex;
+            padding: 2px;
+            margin: 1px;
+            width: 100%;
+        }
+        
+        .card{
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            border-radius: 5px;
+            background-color: white;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        
+        .row{
+            flex-direction: row;
+        }
+        
+        .text-center{
+            display: flex;
+            align-self: center;
+        }
+        
+        
+        #profilepic{
+            flex-grow: 1;
+            border-right: 2px solid rgb(216, 216, 216);
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #profilecontent{
+            flex-grow: 2;
+            justify-content: center;
+        }
+        
+        #profpic{
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        
+        #table-container{
+            justify-content: center;
+        }
+        
+        #riwayat-container{
+            padding: 10px;
+            flex-grow: 1;
+            flex-direction: column;
+            margin-right: 5px;
+        }
+        
+        #riwayat-container .card{
+            justify-content: center;
+            height: 125px;
+            align-items: center;
+        }
+        
+        #pengalaman-container{
+            flex-grow: 1;
+            justify-content: center;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container-fluid">
+            <strong>Biodata</strong>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container-fluid card row">
+            <div id="profilepic" class="container">
+                <img src="me.jpg" id="profpic">
+            </div>
+            <div id="profilecontent" class="container">
+                <div id="table-container">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><b>Nama Lengkap</b></td>
+                                <td>Akmal Zaki Asmara</td>
+                            </tr>
+                            <tr>
+                                <td><b>Tempat, Tanggal Lahir</b></td>
+                                <td>Jombang, 7 Februari 2002</td>
+                            </tr>
+                            <tr>
+                                <td><b>Jenis Kelamin</b></td>
+                                <td>Laki Laki</td>
+                            </tr>
+                            <tr>
+                                <td><b>Agama</b></td>
+                                <td>Islam</td>
+                            </tr>
+                            <tr>
+                                <td><b>Alamat Tinggal</b></td>
+                                <td>Perumahan Joyogrand B2/04</td>
+                            </tr>
+                            <tr>
+                                <td><b>Status</b></td>
+                                <td>Belum Menikah</td>
+                            </tr>
+                            <tr>
+                                <td><b>Pekerjaan</b></td>
+                                <td>Mahasiswa</td>
+                            </tr>
+                            <tr>
+                                <td><b>Kewarganegaraan</b></td>
+                                <td>Indonesia</td>
+                            </tr>   
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="display: flex;">
+        <div class="container" id="riwayat-container">
+            <div class="container">
+                <strong>Riwayat Sekolah</strong>
+            </div>
+            <div class="container-fluid card">
+                <div id="table-container">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><b>SD</b></td>
+                                <td>MIN 1 Kota Malang</td>
+                            </tr>
+                            <tr>
+                                <td><b>SMP</b></td>
+                                <td>MTsN 1 Kota Malang</td>
+                            </tr>
+                            <tr>
+                                <td><b>SMA</b></td>
+                                <td>MAN 2 Kota Malang</td>
+                            </tr>
+                            <tr>
+                                <td><b>Perguruan Tinggi</b></td>
+                                <td>Teknik Informatika - ITS</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="riwayat-container">
+            <div class="container">
+                <strong>Pengalaman</strong>
+            </div>
+            <div class="container-fluid card">
+                <div id="table-container">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Staff Media dan Informasi HMTC</td>
+                                <td>2021 - Sekarang</td>
+                            </tr>
+                            <tr>
+                                <td>Kepala Divisi Content Creator Schematics 2021</td>
+                                <td>2021 - Sekarang</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container-fluid">
+            <strong>Informasi Umum</strong>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container-fluid card row">
+            <div id="profilecontent" class="container">
+                <div id="table-container">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><b>Nomor HP</b></td>
+                                <td>+6281336427692</td>
+                            </tr>
+                            <tr>
+                                <td><b>Email</b></td>
+                                <td>zakiasmara11@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td><b>Hobi</b></td>
+                                <td>Bermain gitar dan game</td>
+                            </tr> 
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
